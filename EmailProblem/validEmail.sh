@@ -5,7 +5,7 @@ emailAddress=0
 #USING FUNCTION
 function validEmailId() {
 	read -p "Enter Email address: " emailId
-	emailRegex="^\w+"
+	emailRegex="^\w+@\w"
 	if [[ $emailId =~ $emailRegex ]]
 	then
 		echo "Valid"
